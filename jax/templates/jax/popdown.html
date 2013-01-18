@@ -1,0 +1,5 @@
+{% load json_serialize %}
+<script>
+  window.opener.jax_popdown = {{ jax|json_dumps|safe }};
+  window.close()
+</script>
